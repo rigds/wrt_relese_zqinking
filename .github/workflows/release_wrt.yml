@@ -37,6 +37,9 @@ jobs:
       matrix:
         os: [ubuntu-24.04]
     runs-on: ${{ matrix.os }}
+    permissions:
+      contents: write
+      actions: write
 
     steps:
       - name: Build System Setup
